@@ -9,11 +9,40 @@
         #canvas{
             border: 1px solid;
             display: block;
+            background-color: blue;
+        }
+        button{
+            margin: 10px 0 0 0;
+            box-shadow: 20px;
+         
+        }
+
+        #up{
+            margin-left: 200px;
+        }
+        #down{
+            position: relative;
+            top: 80px;
+            left: -50px;
+        }
+        #left{
+            position: relative;
+            top: 40px;
+            left: -135px;
+        }
+        #right{
+            position: relative;
+            top: 40px;
+            left: -135px;
         }
     </style>
 </head>
 <body id="body">
-    <canvas style="background-color: blue;" id="canvas" width="1000px" height="400px">your browseer does not support canvas</canvas>
+    <canvas id="canvas">your browseer does not support canvas</canvas>
+    <button id="up">UP</button>
+    <button id="down">DOWN</button>
+    <button id="left">LEFT</button>
+    <button id="right">RIGHT</button>
     <script src="game.js"></script>
 </body>
 </html>
